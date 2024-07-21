@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <script src="{{url_for('static', filename='jquery/jquery.js')}}"></script>
+    <style>
+        body{
+            background-image: url('/static/image/loginbg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container{
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: white;
+          box-shadow: 0 0 10px rgba(0, 0,0,0.1);
+          border-radius: 8px;
+          color: black;
+        }
+        .alert{
+          padding: 15px;
+          margin-bottom: 20px;
+          border-radius: 5px;
+          font-size: 16px;
+        }
+        .alert-success{
+          color: #155724;
+          background-color: #d4edda;
+          border: 1px solid #c3e6cb;
+        }
+        .alert-danger{
+          color: #721c24;
+          background-color: #f8d7da;
+          border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body class="bg1">
+    <!--<div class="he">
+        <br>
+        <label style="font-size:xx-large;font-style: oblique;margin:10px;font-family:'Times New Roman', Times, serif;">Hamleys</label>
+        <div class="dropdown" style="margin-left: 15px;">
+            <button class="dropbtn"><a href="{{url_for('home')}}">Home</a></button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="">Categories</a></button>
+            <div class="dropdown-content">
+              <a href="{{url_for('toys')}}">Toys & Games</a>
+              <a href="#">Sports & Outdoor</a>
+              <a href="#">Rideons & Cycles</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Age</a></button>
+            <div class="dropdown-content">
+              <a href="{{url_for('zero')}}">0 - 12 Months</a>
+              <a href="{{url_for('one')}}">1 - 3 Years</a>
+              <a href="#">4 - 7 Years</a>
+              <a href="#">8 - 10 Years</a>
+              <a href="#">11 - 14 Years</a>
+              <a href="#">14 Years</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Brand</a></button>
+            <div class="dropdown-content">
+              <a href="{{url_for('barbie')}}">Barbie</a>
+              <a href="#">Lego</a>
+              <a href="#">Hamleys</a>
+            </div>
+          </div>
+        <label style="margin: 1px;"><a href="">Categories</a></label>
+        <label style="margin: 25px;"><a href="">Age</a></label>
+        <label style="margin: 10px"><a href="">Brand</a></label>
+        <label style="margin-left:800px ;"><a href="">Login</a></label>
+        <label style="margin-left: 20px;"><a href="">Register</a></label>-->
+    </div>
+    <div class="c1" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+    <h2>Login</h2>
+    <div class="container">
+      {% with messages=get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+             {% for Category, message in messages %}
+      <div class="alert alert-{{Category}}">{{ message }}</div>
+             {% endfor %}
+          {% endif %}
+      {% endwith %}
+    </div>
+    <br>
+    <form action="/login" method="POST">
+        <label>Username<input type="text" name="username"></label><br><br>
+        <label>Password<input type="password" name="password"></label><br><br>
+        <button type="submit" class="btn"><a href="{{url_for('home')}}" style="color:crimson;">Submit</a></button>
+        <button type="reset" class="btn"><a href="" style="color:crimson;">Reset</a></button><br><br>
+        <label style="font-size: 17px;">Not a member?<a href="{{url_for('register')}}" style="color:white;">Sign Up</a></label>
+    </form>
+    </div>
+</body>
+</html>
+<script>
+  $(document).ready(function() {
+    $(".alert").hide(3000)
+  })
+</script>

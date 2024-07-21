@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>14</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <style>
+      body{
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+  </style>
+</head>
+<body class="bg2">
+    <div class="he1">
+        <br>
+        <label style="font-size:xx-large;margin:10px;font-family:'Times New Roman', Times, serif;color:black;font-style: oblique;font-weight: bold;">ToyJoy.com</label>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="{{url_for('home')}}">Home</a></button>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Categories</a></button>
+            <div class="dropdown-content">
+                <a href="{{url_for('toys')}}">Toys & Games</a>
+                <a href="{{url_for('sports')}}">Sports & Outdoor</a>
+                <a href="{{url_for('rideon')}}">Rideons & Cycles</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Age</a></button>
+            <div class="dropdown-content">
+                <a href="{{url_for('zero')}}">0 - 12 Months</a>
+                <a href="{{url_for('one')}}">1 - 3 Years</a>
+                <a href="{{url_for('four')}}">4 - 7 Years</a>
+                <a href="{{url_for('eight')}}">8 - 10 Years</a>
+                <a href="{{url_for('eleven')}}">11 - 14 Years</a>
+                <a href="{{url_for('fourteen')}}">14 Years</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Brand</a></button>
+            <div class="dropdown-content">
+              <a href="{{url_for('barbie')}}">Barbie</a>
+              <a href="{{url_for('lego')}}">Lego</a>
+              <a href="{{url_for('ham')}}">Hamleys</a>
+            </div>
+          </div>
+          <div class="dropdown" style="margin-left: 850px;">
+            <button class="profile-icon" style="margin-left: 10px;"><img src="https://cdn-icons-png.flaticon.com/128/1077/1077114.png" width="25px" height="25px"></button>
+            <div class="dropdown-content">
+              <a href="#">My Profile</a>
+              <a href="#">My Orders</a>
+              <a href="{{url_for('login')}}">Logout</a>
+            </div>
+            
+          </div>
+          <button class="cart" style="margin-left: 10px;"><a href=""><img src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png" width="25px" height="25px"></a></button>
+          <!--<label style="margin: 40px;"><a href="">Home</a></label>
+          <label style="margin: 1px;"><a href="">Categories</a></label>
+          <label style="margin: 25px;"><a href="">Age</a></label>
+          <label style="margin: 10px"><a href="">Brand</a></label>
+          <label style="margin-left:800px ;"><a href="{{url_for('login')}}">Login</a></label>
+          <label style="margin-left: 20px;"><a href="{{url_for('home')}}">Register</a></label>-->
+      </div>
+      <div>
+        <br><br><br>
+        <label style="padding-left: 630px;font-size:45px;">14 Years</label>
+        <br><br><br>
+        <div class="row1">
+          <div class="column1">
+              <img src="https://snooplay.in/cdn/shop/products/Original_CertifiedSequenceGame3google_720x.png?v=1643630103" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Original Sequence Game by Funskool</p>
+              <p style="color: crimson;">Rs.1399</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://snooplay.in/cdn/shop/products/0_d9358956-75a9-4bb0-afe9-9601d07109e4_720x.png?v=1623760061" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">200 Pieces Poker Sett with Brieefcase</p>
+              <p style="color: crimson;">Rs.2349</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://snooplay.in/cdn/shop/products/Mandala_art_image_3_720x.png?v=1636609349" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Mandala Art</p>
+              <p style="color: crimson;">Rs.759</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://snooplay.in/cdn/shop/products/1_027f744b-800c-4194-953d-396b9657d96b_120x.png?v=1624276312" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Telestrations</p>
+              <p style="color: crimson;">Rs.849</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          
+      </div>
+      <!--<br><br><br><br><br><br><br><br>
+      <div class="row1">
+          <div class="column1">
+              <img src="https://www.funcorp.in/cdn/shop/files/71nGtYCgByL._SL1500.jpg?v=1717494876" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Funskool Giggles Bear Melody Crib Mobile For New Born Babies</p>
+              <p style="color: crimson;">Rs.1049</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://www.funcorp.in/cdn/shop/products/RainbowEggShaker-Main.jpg?v=1675944736" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Jumbo Rider</p>
+              <p style="color: crimson;">Rs.1149</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://toyzone.in/cdn/shop/products/Batman-Mini-Ride-On2_1024x1024@2x.jpg?v=1659426541" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Nesta Toys Rainbow Wooden Egg Shaker</p>
+              <p style="color: crimson;">Rs.569</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://www.funcorp.in/cdn/shop/products/GRT91_1.jpg?v=1675943132" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Musical Plush Toy With Calming Vibrations For Infant & Toddlers</p>
+              <p style="color: crimson;">Rs.839</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          
+      </div>-->
+        
+    </div>
+    <div class="fo1">
+        <br>
+        <div class="row">
+            <div class="column">
+                <ul style="margin-left: 50px;list-style-type: none;">
+                    <li style="font-size: x-large;font-weight: bold;">Categories</li>
+                    <br>
+                    <li ><a href="{{url_for('toys')}}" class="a2">Toys and Games</a></li>
+                    <li><a href="{{url_for('sports')}}" class="a2">Sports & Outdoor</a></li>
+                    <li><a href="{{url_for('rideon')}}" class="a2">Ride-Ons and Cycling</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul style="margin-left: 50px;list-style-type: none;">
+                    <li style="font-size: x-large;font-weight: bold;">Support</li>
+                    <br>
+                    <li>My Account</li>
+                    <li>Customer Care</li>
+                    <li>Track Order</li>
+                    <li>Cancel/Return Order</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul style="margin-left: 50px;list-style-type: none;">
+                    <li style="font-size: x-large;font-weight: bold;">Social Media</li>
+                    <br>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+           
+    </div>
+</body>
+</html>

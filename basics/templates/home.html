@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>HOME</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <style>
+      body{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      .a1{
+        text-decoration:none;
+        color: #000;
+      }
+      .a1:hover{
+        text-decoration: none;
+      }
+      
+    </style>
+</head>
+<body class="bg2">
+  <div class="he1">
+    <br>
+      <label style="font-size:xx-large;margin:10px;font-family:'Times New Roman', Times, serif;color:black;font-style: oblique;font-weight: bold;">ToyJoy.com</label>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="{{url_for('home')}}">Home</a></button>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="">Categories</a></button>
+        <div class="dropdown-content">
+          <a href="{{url_for('toys')}}">Toys & Games</a>
+          <a href="{{url_for('sports')}}">Sports & Outdoor</a>
+          <a href="{{url_for('rideon')}}">Rideons & Cycles</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="">Age</a></button>
+        <div class="dropdown-content">
+          <a href="{{url_for('zero')}}">0 - 12 Months</a>
+              <a href="{{url_for('one')}}">1 - 3 Years</a>
+              <a href="{{url_for('four')}}">4 - 7 Years</a>
+              <a href="{{url_for('eight')}}">8 - 10 Years</a>
+              <a href="{{url_for('eleven')}}">11 - 14 Years</a>
+              <a href="{{url_for('fourteen')}}">14 Years</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="">Brand</a></button>
+        <div class="dropdown-content">
+          <a href="{{url_for('barbie')}}">Barbie</a>
+          <a href="{{url_for('lego')}}">Lego</a>
+          <a href="{{url_for('ham')}}">Hamleys</a>
+        </div>
+      </div>
+      <div class="dropdown" style="margin-left: 850px;">
+        <h3>{{session["firstname"]}}</h3>
+       
+          <a href="{{url_for('logout')}}">Logout</a>
+        </div>   
+      <!--<div class="dropdown">
+        <button class="profile-button" style="margin-left:820px">
+          <div class="profile-icon">JD</div>
+          <div class="dropdown-content">
+            <a href="#">My Profile</a>
+            <a href="#">Edit Profile</a>
+            <a href="#">Logout</a>
+          </div>
+        </button>
+        <button class="cart"><img src="https://cdn-icons-png.flaticon.com/128/4290/4290854.png" width="20px" height="20px"></button>
+      </div>-->
+        
+      
+      <!--<label style="margin: 40px;"><a href="">Home</a></label>
+      <label style="margin: 1px;"><a href="">Categories</a></label>
+      <label style="margin: 25px;"><a href="">Age</a></label>
+      <label style="margin: 10px"><a href="">Brand</a></label>
+      <label style="margin-left:800px ;"><a href="{{url_for('login')}}">Login</a></label>
+      <label style="margin-left: 20px;"><a href="{{url_for('register')}}">Register</a></label>-->
+  </div>
+    <div>
+        <img src="{{url_for('static',filename='image/bg.webp')}}" width="1519px" height="600">
+    </div>
+    <div>
+        <br><br><br>
+        <label style="padding-left: 630px;font-size:45px;color:crimson;">SHOP BY AGE</label>
+        <br><br><br>
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <a href="{{url_for('zero')}}">
+                <img src="{{url_for('static',filename='image/0-12_Months_170x.avif')}}">
+                </a>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <a href="{{url_for('one')}}">
+                <img src="{{url_for('static',filename='image/1-3_Years_170x.avif')}}">
+                </a>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <a href="{{url_for('four')}}">
+                <img src="{{url_for('static',filename='image/4-7_Years_170x.avif')}}">
+                </a>
+              </div>
+            </div>
+            
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <a href="{{url_for('eight')}}">
+                <img src="{{url_for('static',filename='image/8-10_Years_170x.avif')}}">
+                </a>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <a href="{{url_for('eleven')}}">
+                <img src="{{url_for('static',filename='image/11-14_Years_170x.avif')}}">
+                </a>
+                
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <a href="{{url_for('fourteen')}}">
+                <img src="{{url_for('static',filename='image/14_Years_170x.avif')}}">
+                </a>
+              </div>
+            </div>
+            
+            
+          </div>
+          
+          
+    </div>
+    <div>
+        <br><br><br>
+        <label style="padding-left: 580px;font-size:45px;color:crimson;">SHOP BY CATEGORY</label>
+        <br><br><br>
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <a href="{{url_for('rideon')}}" class="a1">
+                <img src="{{url_for('static',filename='image/ride-on.webp')}}" width="180px" height="140" >
+                <p style="padding-top: 10px; font-size: x-large;">Ride On</p>
+                </a>
+            </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <a href="{{url_for('barbie')}}" class="a1">
+                <img src="{{url_for('static',filename='image/doll-houses.webp')}}" width="180px" height="140" >
+                <p style="padding-top: 10px; font-size: x-large">Doll Houses</p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <a href="{{url_for('eight')}}" class="a1">
+                <img src="{{url_for('static',filename='image/guns.webp')}}" width="180px" height="140" >
+                <p style="padding-top: 10px; font-size: x-large">Guns</p>
+              </div>
+            </div>
+            
+        </div>
+        <br><br><br>
+        <div class="row" style="margin-left: 400px;">
+            <div class="column">
+              <div class="card">
+                <a href="{{url_for('toys')}}" class="a1">
+                <img src="{{url_for('static',filename='image/friction-toys.webp')}}" width="180px" height="140" >
+                <p style="padding-top: 10px; font-size: x-large;">Friction Toys</p>
+                </a>
+              </div>
+            </div>
+            <!--<div class="column">
+              <div class="card">
+                <img src="{{url_for('static',filename='image/kitchen.webp')}}" width="180px" height="140" >
+                <p style="padding-top: 10px; font-size: x-large">Kitchen Sets</p>
+                
+              </div>
+            </div>-->
+          
+            <div class="column">
+              <div class="card">
+                <a href="{{url_for('lego')}}" class="a1">
+                <img src="{{url_for('static',filename='image/blocks.webp')}}" width="180px" height="140" >
+                <p style="padding-top: 10px; font-size: x-large">Blocks</p>
+                </a>
+              </div>
+            </div>
+            
+            
+          </div>
+    
+          
+    </div>
+    
+    <div id="slideshow">
+      <div class="slide-wrapper">
+
+        <br><br><br>
+          <div class="slide">
+            <h1 class="slide-number">
+            </h1>
+            <img src="{{url_for('static',filename='image/s1.webp')}}"width="1300px" height="450px">
+              
+          </div>
+          <div class="slide">
+              <h1 class="slide-number">
+              </h1>
+              <img src="{{url_for('static',filename='image/s2.webp')}}"width="1300px" height="450px">
+          </div>
+          <div class="slide">
+              <h1 class="slide-number">
+              </h1>
+              <img src="{{url_for('static',filename='image/s3.webp')}}"width="1300px" height="450px">
+          </div>
+          <div class="slide">
+              <h1 class="slide-number">
+              </h1>
+              <img src="{{url_for('static',filename='image/s4.webp')}}"width="1300px" height="450px">
+          </div>
+      </div>
+  </div>
+  <br><br><br>
+    <div>
+      <label style="padding-left: 580px;;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size:45px;color:crimson;">OUR TOP BRANDS</label>
+      <marquee direction="left" scrollamount="15">          
+        <img src="https://www.funcorp.in/cdn/shop/files/Hot_Wheels_570x.jpg?v=1704954879" width="300px" height="300px"> 
+        <img src="https://www.funcorp.in/cdn/shop/files/Lego_570x.jpg?v=1704954879" width="300px" height="300px" style="padding-left: 20px;"> 
+        <img src="https://www.funcorp.in/cdn/shop/files/Barbie_570x.jpg?v=1704954880" width="300px" height="300px" style="padding-left: 20px;"> 
+        <img src="https://www.funcorp.in/cdn/shop/files/Nerf_570x.jpg?v=1704954879"  width="300px" height="300px" style="padding-left: 40px;"> 
+        <img src="https://www.funcorp.in/cdn/shop/files/disney-logo-square_570x.jpg?v=1691158034"  width="300px" height="300px" style="padding-left: 20px;"> 
+        <img src="https://www.funcorp.in/cdn/shop/files/Marvel_570x.jpg?v=1704954879"  width="300px" height="300px" style="padding-left: 20px;"> 
+        <img src="https://www.funcorp.in/cdn/shop/files/Hasbro_Gaming_570x.jpg?v=1704954880"  width="300px" height="300px" style="padding-left: 20px;"> 
+        <img src="https://www.funcorp.in/cdn/shop/files/Giggles_570x.jpg?v=1704954880"  width="300px" height="300px" style="padding-left: 20px;"> 
+        <img src="https://www.funcorp.in/cdn/shop/files/Funskool_570x.jpg?v=1704954879"  width="300px" height="300px" style="padding-left: 20px;"> 
+        <img src="https://www.funcorp.in/cdn/shop/files/Mattel_Games_570x.jpg?v=1704954879"  width="300px" height="300px" style="padding-left: 20px;"> 
+  </marquee> 
+    </div>
+    <br><br><br><br>
+    <div class="row1">
+      <div class="column1">
+        <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/493174607/300/493174607-1_2483.jpeg" width="250px" height="250px">
+        <br><br>
+        <p style="font-weight: bold;">Jcb Muddy Friends Joey & Doug, Pack Of 2, Multicolour</p>
+        <p style="color: crimson;">Rs.399</p>
+        <button class="btn1">ADD TO CART</button>
+    </div>
+    <div class="column1">
+        <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/491635294/300/491635294-1.webp" width="250px" height="250px">
+        <br><br>
+        <p style="font-weight: bold;">Kinder Smart Interactive Learning Series Games for Kids</p>
+        <p style="color: crimson;">Rs.349</p>
+        <button class="btn1">ADD TO CART</button>
+    </div>
+    <div class="column1">
+        <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/493174268/300/493174268_5430.jpeg" width="250px" height="250px">
+        <br><br>
+        <p style="font-weight: bold;">Cry Babies Jenna Dolls For Kids</p>
+        <p style="color: crimson;">Rs.1259</p>
+        <button class="btn1">ADD TO CART</button>
+    </div>
+    <div class="column1">
+        <img src="https://www.funcorp.in/cdn/shop/files/493175281_1_7638.jpg?v=1688733453" width="250px" height="250px">
+        <br><br>
+        <p style="font-weight: bold;">ABC Multi Turn Rattle Multicolour</p>
+        <p style="color: crimson;">Rs.249</p>
+        <button class="btn1">ADD TO CART</button>
+    </div>
+      
+  </div>
+    <div class="fo1">
+        <br>
+        <div class="row">
+            <div class="column">
+                <ul style="margin-left: 50px;list-style-type: none;">
+                    <li style="font-size: x-large;font-weight: bold;">Categories</li>
+                    <br>
+                    <li ><a href="{{url_for('toys')}}" class="a2">Toys and Games</a></li>
+                    <li><a href="{{url_for('sports')}}" class="a2">Sports & Outdoor</a></li>
+                    <li><a href="{{url_for('rideon')}}" class="a2">Ride-Ons and Cycling</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul style="margin-left: 50px;list-style-type: none;">
+                    <li style="font-size: x-large;font-weight: bold;">Support</li>
+                    <br>
+                    <li>My Account</li>
+                    <li>Customer Care</li>
+                    <li>Track Order</li>
+                    <li>Cancel/Return Order</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul style="margin-left: 50px;list-style-type: none;">
+                  <li style="font-size: x-large;font-weight: bold;">Social Media</li>
+                  <br>
+                  <li>Facebook</li>
+                  <li>Instagram</li>
+                  <li>Twitter</li>
+                  <li>YouTube</li>
+                </ul>
+            </div>
+           
+    </div>
+</body>
+</html>

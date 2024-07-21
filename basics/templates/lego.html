@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Lego</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <style>
+      body{
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+  </style>
+</head>
+<body class="bg2">
+    <div class="he1">
+        <br>
+        <label style="font-size:xx-large;margin:10px;font-family:'Times New Roman', Times, serif;color:black;font-style: oblique;font-weight: bold;">ToyJoy.com</label>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="{{url_for('home')}}">Home</a></button>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Categories</a></button>
+            <div class="dropdown-content">
+              <a href="{{url_for('toys')}}">Toys & Games</a>
+              <a href="{{url_for('sports')}}">Sports & Outdoor</a>
+              <a href="{{url_for('rideon')}}">Rideons & Cycles</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Age</a></button>
+            <div class="dropdown-content">
+              <a href="{{url_for('zero')}}">0 - 12 Months</a>
+              <a href="{{url_for('one')}}">1 - 3 Years</a>
+              <a href="{{url_for('four')}}">4 - 7 Years</a>
+              <a href="{{url_for('eight')}}">8 - 10 Years</a>
+              <a href="{{url_for('eleven')}}">11 - 14 Years</a>
+              <a href="{{url_for('fourteen')}}">14 Years</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Brand</a></button>
+            <div class="dropdown-content">
+              <a href="{{url_for('barbie')}}">Barbie</a>
+              <a href="{{url_for('lego')}}">Lego</a>
+              <a href="{{url_for('ham')}}">Hamleys</a>
+            </div>
+          </div>
+          <div class="dropdown" style="margin-left: 850px;">
+            <button class="profile-icon" style="margin-left: 10px;"><img src="https://cdn-icons-png.flaticon.com/128/1077/1077114.png" width="25px" height="25px"></button>
+            <div class="dropdown-content">
+              <a href="#">My Profile</a>
+              <a href="#">My Orders</a>
+              <a href="{{url_for('login')}}">Logout</a>
+            </div>
+            
+          </div>
+          <button class="cart" style="margin-left: 10px;"><a href=""><img src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png" width="25px" height="25px"></a></button>
+          <!--<label style="margin: 40px;"><a href="">Home</a></label>
+          <label style="margin: 1px;"><a href="">Categories</a></label>
+          <label style="margin: 25px;"><a href="">Age</a></label>
+          <label style="margin: 10px"><a href="">Brand</a></label>
+          <label style="margin-left:800px ;"><a href="{{url_for('login')}}">Login</a></label>
+          <label style="margin-left: 20px;"><a href="{{url_for('home')}}">Register</a></label>-->
+      </div>
+      
+      <div>
+        <div id="slideshow">
+            <div class="slide-wrapper">
+      
+              <br><br><br>
+                <div class="slide">
+                  <h1 class="slide-number">
+                  </h1>
+                  <img src="https://www.hamleys.in/_nuxt/img/Website%20Banner_1817x747px.549ddcb.jpg"width="1300px" height="450px">
+                    
+                </div>
+                <div class="slide">
+                    <h1 class="slide-number">
+                    </h1>
+                    <img src="https://www.hamleys.in/_nuxt/img/store-main-banner.f061f62.jpg"width="1300px" height="450px">
+                </div>
+                <div class="slide">
+                    <h1 class="slide-number">
+                    </h1>
+                    <img src="https://www.hamleys.in/_nuxt/img/lego-banner02.a4ca9e2.jpg"width="1300px" height="450px">
+                  </div>
+                  <div class="slide">
+                    <h1 class="slide-number">
+                    </h1>
+                    <img src="https://www.funcorp.in/cdn/shop/files/Lego_brand_1_1920x.jpg?v=1681997090"width="1300px" height="450px">
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <br><br><br>
+        <div class="row1">
+          <div class="column1">
+            <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/492910133/300/492910133-1.jpeg" width="250px" height="250px">
+            <br><br>
+            <p style="font-weight: bold;">Lego 31129 Majestic Tiger Building Blocks Multicolour</p>
+            <p style="color: crimson;">Rs.5524</p>
+            <button class="btn1">ADD TO CART</button>
+        </div>
+        <div class="column1">
+            <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/491490622/300/491490622.webp" width="250px" height="250px">
+            <br><br>
+            <p style="font-weight: bold;">Lego Creator Deep Sea Creatures Building Blocks (230 Pcs)</p>
+            <p style="color: crimson;">Rs.1699</p>
+            <button class="btn1">ADD TO CART</button>
+        </div>
+        <div class="column1">
+            <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/491959966/300/491959966-1.webp" width="250px" height="250px">
+            <br><br>
+            <p style="font-weight: bold;">Lego Road Plates Lego Blocks for Kids Age</p>
+            <p style="color: crimson;">Rs.2199</p>
+            <button class="btn1">ADD TO CART</button>
+        </div>
+        <div class="column1">
+            <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/492910136/300/492910136-1.jpeg" width="250px" height="250px">
+            <br><br>
+            <p style="font-weight: bold;">Lego 60295 Stunt Show Arena Building Blocks Multicolour </p>
+            <p style="color: crimson;">Rs.13499</p>
+            <button class="btn1">ADD TO CART</button>
+        </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+        <div class="row1">
+          <div class="column1">
+            <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/493176626/300/493176626-1.jpeg" width="250px" height="250px">
+            <br><br>
+            <p style="font-weight: bold;">LEGO Harry Potter Hogwarts Hospital Wing 76398 Building Kit 510 Pieces</p>
+            <p style="color: crimson;">Rs.6499</p>
+            <button class="btn1">ADD TO CART</button>
+        </div>
+        <div class="column1">
+            <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/493176630/300/493176630-1.jpeg" width="250px" height="250px">
+            <br><br>
+            <p style="font-weight: bold;">LEGO Harry Potter Hogwarts Express Collectors' Edition 76405 5,129 Pieces Multicolour</p>
+            <p style="color: crimson;">Rs.58849</p>
+            <button class="btn1">ADD TO CART</button>
+        </div>
+        <div class="column1">
+            <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/493173882/300/493173882-1_7209.jpeg" width="250px" height="250px">
+            <br><br>
+            <p style="font-weight: bold;">Creator 3in1 Super Robot Building Kit</p>
+            <p style="color: crimson;">Rs.1599</p>
+            <button class="btn1">ADD TO CART</button>
+        </div>
+        <div class="column1">
+            <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/493176605/300/493176605-1.jpeg" width="250px" height="250px">
+            <br><br>
+            <p style="font-weight: bold;">EGO City Ultimate Stunt Riders Challenge 60361 Building Toy Set 385 Pieces</p>
+            <p style="color: crimson;">Rs.9999</p>
+            <button class="btn1">ADD TO CART</button>
+        </div>
+
+          </div>
+    </div>
+    <div class="fo1">
+
+        <br>
+        <div class="row">
+            <div class="column">
+                <ul style="margin-left: 50px;list-style-type: none;">
+                    <li style="font-size: x-large;font-weight: bold;">Categories</li>
+                    <br>
+                    <li ><a href="{{url_for('toys')}}" class="a2">Toys and Games</a></li>
+                    <li><a href="{{url_for('sports')}}" class="a2">Sports & Outdoor</a></li>
+                    <li><a href="{{url_for('rideon')}}" class="a2">Ride-Ons and Cycling</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul style="margin-left: 50px;list-style-type: none;">
+                    <li style="font-size: x-large;font-weight: bold;">Support</li>
+                    <br>
+                    <li>My Account</li>
+                    <li>Customer Care</li>
+                    <li>Track Order</li>
+                    <li>Cancel/Return Order</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul style="margin-left: 50px;list-style-type: none;">
+                    <li style="font-size: x-large;font-weight: bold;">Social Media</li>
+                    <br>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+           
+    </div>
+</body>
+</html>

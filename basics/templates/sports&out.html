@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Sports&Outdoor</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <style>
+      body{
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+  </style>
+</head>
+<body class="bg2">
+    <div class="he1">
+        <br>
+        <label style="font-size:xx-large;margin:10px;font-family:'Times New Roman', Times, serif;color:black;font-style: oblique;font-weight: bold;">ToyJoy.com</label>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="{{url_for('home')}}">Home</a></button>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Categories</a></button>
+            <div class="dropdown-content">
+                <a href="{{url_for('toys')}}">Toys & Games</a>
+                <a href="{{url_for('sports')}}">Sports & Outdoor</a>
+                <a href="{{url_for('rideon')}}">Rideons & Cycles</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Age</a></button>
+            <div class="dropdown-content">
+              <a href="{{url_for('zero')}}">0 - 12 Months</a>
+              <a href="{{url_for('one')}}">1 - 3 Years</a>
+              <a href="{{url_for('four')}}">4 - 7 Years</a>
+              <a href="{{url_for('eight')}}">8 - 10 Years</a>
+              <a href="{{url_for('eleven')}}">11 - 14 Years</a>
+              <a href="{{url_for('fourteen')}}">14 Years</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Brand</a></button>
+            <div class="dropdown-content">
+              <a href="{{url_for('barbie')}}">Barbie</a>
+              <a href="{{url_for('lego')}}">Lego</a>
+              <a href="{{url_for('ham')}}">Hamleys</a>
+            </div>
+          </div>
+            
+          <div class="dropdown" style="margin-left: 850px;">
+            <button class="profile-icon" style="margin-left: 10px;"><img src="https://cdn-icons-png.flaticon.com/128/1077/1077114.png" width="25px" height="25px"></button>
+            <div class="dropdown-content">
+              <a href="#">My Profile</a>
+              <a href="#">My Orders</a>
+              <a href="{{url_for('login')}}">Logout</a>
+            </div>
+            
+          </div>
+          <button class="cart" style="margin-left: 10px;"><a href=""><img src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png" width="25px" height="25px"></a></button>
+          <!--<label style="margin: 40px;"><a href="">Home</a></label>
+          <label style="margin: 1px;"><a href="">Categories</a></label>
+          <label style="margin: 25px;"><a href="">Age</a></label>
+          <label style="margin: 10px"><a href="">Brand</a></label>
+          <label style="margin-left:800px ;"><a href="{{url_for('login')}}">Login</a></label>
+          <label style="margin-left: 20px;"><a href="{{url_for('home')}}">Register</a></label>-->
+      </div>
+      <div>
+        <br><br><br>
+        <label style="padding-left: 630px;font-size:45px;">Sports & Outdoor</label>
+        <br><br><br>
+        <div class="row1">
+          <div class="column1">
+              <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/491278906/300/491278906.webp" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">IToys Marvel Spiderman My first Bat & ball set for kids </p>
+              <p style="color: crimson;">Rs.159</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/492365367/300/492365367_-_1.jpeg" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Hamleys Street Glider for Outdoor Play, Red</p>
+              <p style="color: crimson;">Rs.1949</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/492408397/300/492408397-1.jpeg" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Zoozi Mount and Play Basketball set for kids Multicolor  </p>
+              <p style="color: crimson;">Rs.549</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/491318676/300/491318676-1.webp" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Ferrari Soccer Ball - Sports & Accessories</p>
+              <p style="color: crimson;">Rs.949</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          
+      </div>
+      <br><br><br><br><br><br><br><br>
+      <div class="row1">
+          <div class="column1">
+              <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/492409618/300/492409618-1.jpeg" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Shumee Wooden Mini Bowling Pins Toy Set</p>
+              <p style="color: crimson;">Rs.949</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/493174019/300/493174019-1_9994.webp" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Marvel Spiderman Focus Pad & Gloves Set</p>
+              <p style="color: crimson;">Rs.2749</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/493174330/300/IMG_5153.jpeg" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Hamleys Space Battle Game for Kids</p>
+              <p style="color: crimson;">Rs.3569</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://hmadmin.hamleys.in/product/494230048/300/494230048-1.jpg" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Kings Sport Electronic Basket Ball Game</p>
+              <p style="color: crimson;">Rs.3699</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          
+      </div>
+        
+    </div>
+    <div class="fo1">
+        <br>
+        <div class="row">
+            <div class="column">
+                <ul style="margin-left: 50px;list-style-type: none;">
+                    <li style="font-size: x-large;font-weight: bold;">Categories</li>
+                    <br>
+                    <li ><a href="{{url_for('toys')}}" class="a2">Toys and Games</a></li>
+                    <li><a href="{{url_for('sports')}}" class="a2">Sports & Outdoor</a></li>
+                    <li><a href="{{url_for('rideon')}}" class="a2">Ride-Ons and Cycling</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul style="margin-left: 50px;list-style-type: none;">
+                    <li style="font-size: x-large;font-weight: bold;">Support</li>
+                    <br>
+                    <li>My Account</li>
+                    <li>Customer Care</li>
+                    <li>Track Order</li>
+                    <li>Cancel/Return Order</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul style="margin-left: 50px;list-style-type: none;">
+                    <li style="font-size: x-large;font-weight: bold;">Social Media</li>
+                    <br>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+           
+    </div>
+</body>
+</html>

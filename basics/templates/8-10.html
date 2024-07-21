@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>8-10</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <style>
+      body{
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+  </style>
+</head>
+<body class="bg2">
+    <div class="he1">
+        <br>
+        <label style="font-size:xx-large;margin:10px;font-family:'Times New Roman', Times, serif;color:black;font-style: oblique;font-weight: bold;">ToyJoy.com</label>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="{{url_for('home')}}">Home</a></button>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Categories</a></button>
+            <div class="dropdown-content">
+                <a href="{{url_for('toys')}}">Toys & Games</a>
+                <a href="{{url_for('sports')}}">Sports & Outdoor</a>
+                <a href="{{url_for('rideon')}}">Rideons & Cycles</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Age</a></button>
+            <div class="dropdown-content">
+                <a href="{{url_for('zero')}}">0 - 12 Months</a>
+                <a href="{{url_for('one')}}">1 - 3 Years</a>
+                <a href="{{url_for('four')}}">4 - 7 Years</a>
+                <a href="{{url_for('eight')}}">8 - 10 Years</a>
+                <a href="{{url_for('eleven')}}">11 - 14 Years</a>
+                <a href="{{url_for('fourteen')}}">14 Years</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Brand</a></button>
+            <div class="dropdown-content">
+              <a href="{{url_for('barbie')}}">Barbie</a>
+              <a href="{{url_for('lego')}}">Lego</a>
+              <a href="{{url_for('ham')}}">Hamleys</a>
+            </div>
+          </div>
+          <div class="dropdown" style="margin-left: 850px;">
+            <button class="profile-icon" style="margin-left: 10px;"><img src="https://cdn-icons-png.flaticon.com/128/1077/1077114.png" width="25px" height="25px"></button>
+            <div class="dropdown-content">
+              <a href="#">My Profile</a>
+              <a href="#">My Orders</a>
+              <a href="{{url_for('login')}}">Logout</a>
+            </div>
+            
+          </div>
+          <button class="cart" style="margin-left: 10px;"><a href=""><img src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png" width="25px" height="25px"></a></button>
+          <!--<label style="margin: 40px;"><a href="">Home</a></label>
+          <label style="margin: 1px;"><a href="">Categories</a></label>
+          <label style="margin: 25px;"><a href="">Age</a></label>
+          <label style="margin: 10px"><a href="">Brand</a></label>
+          <label style="margin-left:800px ;"><a href="{{url_for('login')}}">Login</a></label>
+          <label style="margin-left: 20px;"><a href="{{url_for('home')}}">Register</a></label>-->
+      </div>
+      <div>
+        <br><br><br>
+        <label style="padding-left: 630px;font-size:45px;">8 - 10 Years</label>
+        <br><br><br>
+        <div class="row1">
+          <div class="column1">
+              <img src="https://www.funcorp.in/cdn/shop/products/games_uno_flip_side_3_785x.jpg?v=1675697348" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Mattel Games Uno Flip Side Family & Friends Card Game</p>
+              <p style="color: crimson;">Rs.199</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://www.funcorp.in/cdn/shop/products/nerf_elite_strike_surgefire_blaster_15-dart_rotating_drum_slam_fire_includes_15_official_nerf_elite_darts_for_children_teens_adults_5.jpg?v=1675692436" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Nerf Elite Strike SurgeFire Blaster 15-Dart Rotating Drum, Slam Fire</p>
+              <p style="color: crimson;">Rs.1149</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://www.funcorp.in/cdn/shop/files/E82770791_195166190693_combo_21-S.jpg?v=1683368277" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Hasbro Gaming The Game Of Life Board Game</p>
+              <p style="color: crimson;">Rs.1059</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://www.funcorp.in/cdn/shop/products/nerf_helios_xviii-700_nerf_rival_blaster_-_red_5.jpg?v=1675934019" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Nerf Helios XVIII-700 Nerf Rival Blaster - Red</p>
+              <p style="color: crimson;">Rs.2249</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          
+      </div>
+      <br><br><br><br><br><br><br><br>
+      <div class="row1">
+          <div class="column1">
+              <img src="https://www.funcorp.in/cdn/shop/products/nerf_alpha_strike_mission_ops_set_includes_4_blasters_2_half-targets_and_25_official_nerf_elite_darts_1.jpg?v=1675939883" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Nerf Alpha Strike Mission Ops Set Includes 4 Blasters, 2 Half-Targets, And 25 Official Nerf Elite Darts</p>
+              <p style="color: crimson;">Rs.1449</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://www.funcorp.in/cdn/shop/products/funskool_capture_claw_superman_action_figurine_for_ages_4_card_design_may_vary_1.jpg?v=1675940490" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Funskool Capture Claw Superman Action Figurine</p>
+              <p style="color: crimson;">Rs.449</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://www.funcorp.in/cdn/shop/files/2copy.jpg?v=1687329753" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Nerf Target Scores Dart Board</p>
+              <p style="color: crimson;">Rs.569</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          <div class="column1">
+              <img src="https://www.funcorp.in/cdn/shop/products/marvel_avengers_endgame_red_infinity_gauntlet_electronic_fist_roleplay_toy_1.jpg?v=1675924971" width="250px" height="250px">
+              <br><br>
+              <p style="font-weight: bold;">Marvel Avengers: Endgame Red Infinity Gauntlet Electronic Fist Roleplay Toy With Lights And Sounds</p>
+              <p style="color: crimson;">Rs.839</p>
+              <button class="btn1">ADD TO CART</button>
+          </div>
+          
+      </div>
+        
+    </div>
+    <div class="fo1">
+        <br>
+        <div class="row">
+            <div class="column">
+                <ul style="margin-left: 50px;list-style-type: none;">
+                    <li style="font-size: x-large;font-weight: bold;">Categories</li>
+                    <br>
+                    <li ><a href="{{url_for('toys')}}" class="a2">Toys and Games</a></li>
+                    <li><a href="{{url_for('sports')}}" class="a2">Sports & Outdoor</a></li>
+                    <li><a href="{{url_for('rideon')}}" class="a2">Ride-Ons and Cycling</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul style="margin-left: 50px;list-style-type: none;">
+                    <li style="font-size: x-large;font-weight: bold;">Support</li>
+                    <br>
+                    <li>My Account</li>
+                    <li>Customer Care</li>
+                    <li>Track Order</li>
+                    <li>Cancel/Return Order</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul style="margin-left: 50px;list-style-type: none;">
+                    <li style="font-size: x-large;font-weight: bold;">Social Media</li>
+                    <br>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+           
+    </div>
+</body>
+</html>
